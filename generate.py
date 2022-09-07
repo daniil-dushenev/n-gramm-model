@@ -93,4 +93,4 @@ else:
     prefix = args.prefix
 
 neuwork = model()
-neuwork.generate(args.model, prefix, int(args.length), (False if int(args.off_sigmoid) == 1 else True))
+neuwork.generate(args.model, prefix, int(args.length), (False if args.off_sigmoid == '1' else True))
